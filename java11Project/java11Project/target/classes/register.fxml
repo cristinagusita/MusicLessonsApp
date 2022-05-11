@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="gobacktologin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java11project.sample.Controllers.RegistrationController">
+    <children>
+        <AnchorPane prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: #E96151;">
+         <children>
+            <ImageView fitHeight="82.0" fitWidth="70.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@com/example/java11project/left_corner.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="70.0" layoutX="265.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@com/example/java11project/lock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="70.0" layoutX="516.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@com/example/java11project/right_corner.jpg" />
+               </image>
+            </ImageView>
+         </children>
+        </AnchorPane>
+        <Label layoutX="250.0" layoutY="82.0" text="REGISTER" textAlignment="JUSTIFY" textFill="#8c1818">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="78.0" layoutY="128.0" text="Username" textFill="#8c1818">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameField" layoutX="176.0" layoutY="125.0" prefHeight="31.0" prefWidth="365.0" promptText="username" />
+        <Label layoutX="81.0" layoutY="170.0" text="Password" textFill="#8c1818">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="90.0" layoutY="216.0" text="Role" textFill="#8c1818">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="role" layoutX="176.0" layoutY="214.0" onMouseEntered="#onRoleSelection" prefHeight="31.0" prefWidth="365.0" />
+        <Button fx:id="registerButton" layoutX="78.0" layoutY="301.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="26.0" prefWidth="461.0" style="-fx-background-color: #E96151;" text="Register " textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <PasswordField fx:id="passwordField" layoutX="176.0" layoutY="168.0" prefHeight="31.0" prefWidth="365.0" promptText="password" />
+        <Button fx:id="closeButton" layoutX="76.0" layoutY="397.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="31.0" prefWidth="461.0" style="-fx-background-color: #E96151;" text="Close" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="goBackButton" layoutX="76.0" layoutY="349.0" mnemonicParsing="false" onAction="#goBackButtonOnAction" prefHeight="31.0" prefWidth="461.0" style="-fx-background-color: #E96151;" text="Go back" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <TextField fx:id="accesCode" layoutX="178.0" layoutY="255.0" prefHeight="17.0" prefWidth="144.0" promptText="acces code for teachers" />
+      <Text fx:id="registrationMessage" layoutX="133.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="333.13673400878906" />
+    </children>
+</AnchorPane>
