@@ -20,7 +20,7 @@ public class Main extends Application {
         initDirectory();
         UserService.initDatabase();
 
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("register.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("login.fxml"));
 
         Scene scene = new Scene(fxmlLoader.load(), 600, 450);
         stage.setTitle("Music Lessons Application");

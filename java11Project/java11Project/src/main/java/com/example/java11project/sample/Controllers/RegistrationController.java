@@ -5,6 +5,7 @@ import com.example.java11project.sample.exceptions.UsernameAlreadyExistsExceptio
 import com.example.java11project.sample.services.UserService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
@@ -13,6 +14,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class RegistrationController {
     @FXML
@@ -87,5 +90,11 @@ public class RegistrationController {
             accesCode.clear();
             accesCode.setPromptText("Not for clients");
         }
+    }
+
+    @FXML
+    public void goBackButtonOnAction(ActionEvent event) throws IOException {
+        AnchorPane logpane= FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
+        gobacktologin.getChildren().setAll(logpane);
     }
 }
