@@ -22,4 +22,6 @@ module com.example.java11project {
     exports com.example.java11project.sample.exceptions to javafx.fxml;
     exports com.example.java11project.sample.services to javafx.fxml;
     exports com.example.java11project.sample.users to javafx.fxml;
+    exports com.example.java11project.sample.Controllers.Client to javafx.fxml;
+    opens com.example.java11project.sample.Controllers.Client to javafx.fxml;
 }

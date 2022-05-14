@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="openClientInterface" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java11project.sample.Controllers.Client.ClientController">
+    <children>
+        <AnchorPane prefHeight="680.0" prefWidth="452.0" style="-fx-background-color: #ddccb5;">
+            <children>
+                <ImageView fitHeight="135.0" fitWidth="300.0" layoutX="83.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@com/example/java11project/rv.jpg" />
+                    </image>
+                </ImageView>
+                <Button layoutX="73.0" layoutY="133.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="See Prices" textFill="#fffdfd">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button layoutX="73.0" layoutY="216.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="Review a profesor" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button layoutX="73.0" layoutY="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="Book Music Lesson" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="goBack" layoutX="76.0" layoutY="382.0" mnemonicParsing="false" onAction="#goBackButtonOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="Go Back To Homepage" textFill="#fcfcfc">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="logOut" layoutX="73.0" layoutY="463.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="Log Out" textFill="#fffdfd">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button layoutX="73.0" layoutY="61.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="See teachers" textFill="#fffdfd">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="change" layoutX="452.0" prefHeight="680.0" prefWidth="675.0" style="-fx-background-color: #f4e7d5;">
+            <children>
+                <Text layoutX="46.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dear user, we thank you for using our Music Lessons App!" textAlignment="CENTER" wrappingWidth="583.22607421875">
+                    <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                    </font>
+                </Text>
+                <Text layoutX="75.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here are some of our happiest customers  this season!">
+                    <font>
+                        <Font name="System Bold" size="21.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="173.0" fitWidth="300.0" layoutX="34.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@com/example/java11project/picseason1.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="173.0" fitWidth="262.0" layoutX="348.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@com/example/java11project/nb.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="173.0" fitWidth="300.0" layoutX="34.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@com/example/java11project/mm.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="173.0" fitWidth="300.0" layoutX="348.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@com/example/java11project/vv.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
