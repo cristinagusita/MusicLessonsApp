@@ -9,7 +9,7 @@
     <children>
         <AnchorPane prefHeight="680.0" prefWidth="452.0" style="-fx-background-color: #83a48f;">
             <children>
-                <Button fx:id="modify" layoutX="83.0" layoutY="67.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="Modify Personal Information">
+                <Button fx:id="modify" layoutX="83.0" layoutY="67.0" mnemonicParsing="false" onAction="#modifyButtonOnAction" prefHeight="40.0" prefWidth="300.0" text="Modify Personal Information">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>
