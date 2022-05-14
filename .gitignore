@@ -1,3 +1,4 @@
 .idea
 java11Project.iml
 *.class
+/java11Project/java11Project/target/maven-archiver/pom.properties
