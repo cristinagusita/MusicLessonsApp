@@ -27,7 +27,7 @@
                 <Font name="System Bold" size="20.0" />
             </font>
         </Text>
-        <Text layoutX="23.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can see more about an profesor by selecting one from the list below:">
+        <Text layoutX="23.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can see more about any teacher by selecting one from the list below:">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>

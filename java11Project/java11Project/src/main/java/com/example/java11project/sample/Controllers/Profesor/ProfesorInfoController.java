@@ -1,26 +1,15 @@
-package com.example.java11project.sample.Profesor;
-
+package com.example.java11project.sample.Controllers.Profesor;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
 import javafx.event.ActionEvent;
-import javafx.scene.Parent;
-
 //import org.w3c.dom.Text;
-
 import java.io.IOException;
-import java.util.Objects;
 
 import com.example.java11project.sample.services.UserService;
-import com.example.java11project.sample.users.User;
-
 
 public class ProfesorInfoController {
 
@@ -44,9 +33,6 @@ public class ProfesorInfoController {
     private TextField password;
     @FXML
     private Text savedf;
-
-
-
     @FXML
     public void saveButtonOnAction(ActionEvent event) throws IOException{
         String p=pricetext.getText();
@@ -65,4 +51,3 @@ public class ProfesorInfoController {
 
     }
 }
-

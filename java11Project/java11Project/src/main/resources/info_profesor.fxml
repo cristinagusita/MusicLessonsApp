@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="680.0" prefWidth="675.0" style="-fx-background-color: #c2d3c8;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java11project.sample.Profesor.ProfesorInfoController">
+<AnchorPane prefHeight="680.0" prefWidth="675.0" style="-fx-background-color: #c2d3c8;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java11project.sample.Controllers.Profesor.ProfesorInfoController">
     <children>
         <Button fx:id="save" layoutX="225.0" layoutY="374.0" mnemonicParsing="false" onAction="#saveButtonOnAction" prefHeight="47.0" prefWidth="223.0" style="-fx-background-color: #4193a4;" text="SAVE" textFill="WHITE">
             <font>
