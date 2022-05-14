@@ -50,6 +50,12 @@ public class ClientController {
     }
 
     @FXML
+    public void bookButtonOnAction(ActionEvent event)throws IOException{
+        AnchorPane pane=FXMLLoader.load(getClass().getClassLoader().getResource("booklesson_client.fxml"));
+        change.getChildren().setAll(pane);
+    }
+
+    @FXML
     public void seeprofesorsButtonOnAction(ActionEvent event) throws IOException{
         AnchorPane pane=FXMLLoader.load(getClass().getClassLoader().getResource("profesor_client.fxml"));
         change.getChildren().setAll(pane);

@@ -10,6 +10,7 @@ module com.example.java11project {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires nitrite;
+    requires validation.api;
 
     opens com.example.java11project to javafx.fxml;
     opens com.example.java11project.sample.Controllers to javafx.fxml;
