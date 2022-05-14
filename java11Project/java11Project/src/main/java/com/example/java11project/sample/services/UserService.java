@@ -178,7 +178,7 @@ public class UserService {
                 String pass = encodePassword(username, password);
 
                 if (Objects.equals(user.getPassword(), pass)) {
-                    if (Objects.equals(user.getRole(), "profesor")) {
+                    if (Objects.equals(user.getRole(), "Profesor")) {
                         return 1;
 
                     }
