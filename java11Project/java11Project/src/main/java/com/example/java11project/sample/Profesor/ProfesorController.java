@@ -31,6 +31,12 @@ public class ProfesorController {
     private Button logOut;
 
     @FXML
+    public void modifyButtonOnAction(ActionEvent event) throws IOException{
+        AnchorPane pane=FXMLLoader.load(getClass().getClassLoader().getResource("info_profesor.fxml"));
+        change.getChildren().setAll(pane);
+    }
+
+    @FXML
     public void goBackButtonOnAction(ActionEvent event) throws IOException{
         AnchorPane pane=FXMLLoader.load(getClass().getClassLoader().getResource("profesorhomepage.fxml"));
         openprofesorInterface.getChildren().setAll(pane);
