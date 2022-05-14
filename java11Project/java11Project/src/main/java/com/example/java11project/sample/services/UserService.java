@@ -41,7 +41,7 @@ public class UserService {
     public static void getprofesors(ObservableList<String> names) {
         try {
             for (User user : userRepository.find()) {
-                if (Objects.equals("profesor", user.getRole())) {
+                if (Objects.equals("Profesor", user.getRole())) {
                     names.add(user.getUsername());
 
                 }
@@ -103,7 +103,7 @@ public class UserService {
     public static void getPrices(ObservableList<String> prices) {
         try {
             for (User user : userRepository.find()) {
-                if (Objects.equals("profesor", user.getRole())) {
+                if (Objects.equals("Profesor", user.getRole())) {
                     prices.add(user.getPrice() + " ron");
 
                 }
@@ -162,7 +162,7 @@ public class UserService {
         return null;
     }
 
-    public static String returnsMountain(String name) {
+    public static String returnsInstrument(String name) {
         for (User user : userRepository.find()) {
             if (Objects.equals(user.getUsername(), name)) {
                 return user.getInstrument();
