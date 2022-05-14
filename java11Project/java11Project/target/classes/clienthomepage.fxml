@@ -24,7 +24,7 @@
                         <Font name="System Bold" size="16.0" />
                     </font>
                 </Button>
-                <Button layoutX="73.0" layoutY="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="Book Music Lesson" textFill="WHITE">
+                <Button layoutX="73.0" layoutY="300.0" mnemonicParsing="false" onAction="#bookButtonOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="Book Music Lesson" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="16.0" />
                     </font>
