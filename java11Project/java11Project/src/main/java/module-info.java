@@ -24,7 +24,7 @@ module com.example.java11project {
     exports com.example.java11project.sample.users to javafx.fxml, nitrite;
     exports com.example.java11project.sample.Controllers.Client to javafx.fxml;
     opens com.example.java11project.sample.Controllers.Client to javafx.fxml;
-    exports com.example.java11project.sample.Profesor to javafx.fxml;
-    opens com.example.java11project.sample.Profesor to javafx.fxml;
+    exports com.example.java11project.sample.Controllers.Profesor to javafx.fxml;
+    opens com.example.java11project.sample.Controllers.Profesor to javafx.fxml;
 
 }

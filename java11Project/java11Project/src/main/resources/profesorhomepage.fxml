@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="openprofesorInterface" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java11project.sample.Profesor.ProfesorController">
+<AnchorPane fx:id="openprofesorInterface" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java11project.sample.Controllers.Profesor.ProfesorController">
     <children>
         <AnchorPane prefHeight="680.0" prefWidth="452.0" style="-fx-background-color: #83a48f;">
             <children>
