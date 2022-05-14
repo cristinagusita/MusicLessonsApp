@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="openregisterpane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java11project.sample.Controllers.LoginController">
+    <children>
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <right>
+                <AnchorPane prefHeight="450.0" prefWidth="320.0" style="-fx-background-color: #ECECE7;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="80.0" fitWidth="105.0" layoutX="120.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@com/example/java11project/lock.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="21.0" layoutY="120.0" text="Username" textFill="#dd1616">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="usernameTextField" layoutX="107.0" layoutY="115.0" promptText="Username" />
+                        <Label layoutX="23.0" layoutY="157.0" text="Password" textFill="#dd1616">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="passwordField" layoutX="107.0" layoutY="152.0" promptText="Password" />
+                        <Button fx:id="loginButton" layoutX="26.0" layoutY="225.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="36.0" prefWidth="269.0" style="-fx-background-color: #E96151;" text="Login" textAlignment="JUSTIFY" textFill="#0d0d0d" textOverrun="CLIP">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="cancelButton" layoutX="26.0" layoutY="273.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="36.0" prefWidth="269.0" style="-fx-background-color: #E96151;" text="Cancel" textAlignment="JUSTIFY" textFill="#0d0d0d" textOverrun="CLIP">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Button>
+                        <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="21.0" layoutY="192.0" prefHeight="21.0" prefWidth="273.0" textFill="#e40606">
+                            <font>
+                                <Font name="System Bold Italic" size="15.0" />
+                            </font>
+                        </Label>
+                        <Text fill="#dd1616" layoutX="15.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You don't have an account? Register now!">
+                            <font>
+                                <Font name="System Bold Italic" size="15.0" />
+                            </font>
+                        </Text>
+                        <Button fx:id="registerButton" layoutX="29.0" layoutY="356.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="39.0" prefWidth="263.0" style="-fx-background-color: #E96151;" text="Register">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </right>
+            <center>
+                <AnchorPane prefHeight="450.0" prefWidth="280.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="556.0" fitWidth="299.0" layoutX="-17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@com/example/java11project/mlalogo_2.jpg" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
