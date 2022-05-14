@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="openprofesorInterface" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java11project.sample.Profesor.ProfesorController">
+<AnchorPane fx:id="openprofesorInterface" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java11project.sample.Controllers.Profesor.ProfesorController">
     <children>
         <AnchorPane prefHeight="680.0" prefWidth="452.0" style="-fx-background-color: #83a48f;">
             <children>
@@ -19,7 +19,7 @@
                         <Font name="System Bold" size="15.0" />
                     </font>
                 </Button>
-                <Button fx:id="seeLessonRequests" layoutX="83.0" layoutY="240.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="See Lesson Requests">
+                <Button fx:id="seeLessonRequests" layoutX="83.0" layoutY="240.0" mnemonicParsing="false" onAction="#seeLessonRequestsButtonOnAction" prefHeight="40.0" prefWidth="300.0" text="See Lesson Requests">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>

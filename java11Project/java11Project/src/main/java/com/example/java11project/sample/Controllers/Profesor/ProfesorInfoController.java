@@ -18,7 +18,7 @@ public class ProfesorInfoController {
     @FXML
     private Label price;
     @FXML
-    private Label mountain;
+    private Label instrument;
     @FXML
     private Label description;
     @FXML
