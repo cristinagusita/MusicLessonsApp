@@ -48,4 +48,10 @@ public class ClientController {
         stage.show();
 
     }
+
+    @FXML
+    public void seeprofesorsButtonOnAction(ActionEvent event) throws IOException{
+        AnchorPane pane=FXMLLoader.load(getClass().getClassLoader().getResource("profesor_client.fxml"));
+        change.getChildren().setAll(pane);
+    }
 }
