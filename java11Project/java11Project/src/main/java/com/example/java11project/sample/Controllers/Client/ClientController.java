@@ -57,6 +57,13 @@ public class ClientController {
     }
 
     @FXML
+    public void seePricesButtonOnAction(ActionEvent event)throws IOException{
+        AnchorPane pane=FXMLLoader.load(getClass().getClassLoader().getResource("prices_client.fxml"));
+        change.getChildren().setAll(pane);
+
+    }
+
+    @FXML
     public void bookButtonOnAction(ActionEvent event)throws IOException{
         AnchorPane pane=FXMLLoader.load(getClass().getClassLoader().getResource("booklesson_client.fxml"));
         change.getChildren().setAll(pane);
