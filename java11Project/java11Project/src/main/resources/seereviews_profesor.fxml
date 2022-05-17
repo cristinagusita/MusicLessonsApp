@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="680.0" prefWidth="675.0" style="-fx-background-color: #c2d3c8;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java11project.sample.Controllers.Profesor.ProfesorReviewsController">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="475.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@com/example/java11project/rv.jpg" />
+            </image>
+        </ImageView>
+        <Button layoutX="299.0" layoutY="150.0" mnemonicParsing="false" onAction="#CheckButtonOnAction" style="-fx-background-color: #b1380f;" text="Check" textFill="#f5f5f5">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <ListView fx:id="list" layoutX="183.0" layoutY="228.0" prefHeight="328.0" prefWidth="310.0">
+            <padding>
+                <Insets left="50.0" top="5.0" />
+            </padding></ListView>
+        <Text fill="#b1380f" layoutX="212.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press to see the reviews!">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Text>
+        <TextField fx:id="nume" layoutX="258.0" layoutY="115.0" promptText="Username" />
+        <Label fx:id="eroare" layoutX="197.0" layoutY="556.0" prefHeight="17.0" prefWidth="283.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Text fill="#b1380f" layoutX="291.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reviews">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

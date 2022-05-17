@@ -14,7 +14,7 @@
                         <Font name="System Bold" size="15.0" />
                     </font>
                 </Button>
-                <Button fx:id="seeReviews" layoutX="83.0" layoutY="153.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="See Reviews">
+                <Button fx:id="seeReviews" layoutX="83.0" layoutY="153.0" mnemonicParsing="false" onAction="#seeReviewsButtonOnAction" prefHeight="40.0" prefWidth="300.0" text="See Reviews">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>

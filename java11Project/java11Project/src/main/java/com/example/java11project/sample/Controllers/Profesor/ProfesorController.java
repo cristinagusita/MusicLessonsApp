@@ -33,6 +33,13 @@ public class ProfesorController {
     }
 
     @FXML
+    public void seeReviewsButtonOnAction(ActionEvent event) throws IOException{
+        AnchorPane pane=FXMLLoader.load(getClass().getClassLoader().getResource("seereviews_profesor.fxml"));
+        change.getChildren().setAll(pane);
+
+    }
+
+    @FXML
     public void seeLessonRequestsButtonOnAction(ActionEvent event) throws IOException{
         AnchorPane pane=FXMLLoader.load(getClass().getClassLoader().getResource("requests_profesor.fxml"));
         change.getChildren().setAll(pane);
