@@ -22,7 +22,8 @@ public class UserService {
     public static void initDatabase() {
 
         Nitrite database = Nitrite.builder()
-                .filePath("MusicLessonsApp.db")
+                //.filePath("MusicLessonsApp.db")
+                .filePath(FileSistemService.getPathToFile("MusicLessonsApp.db").toFile())
                 .openOrCreate("test", "test");
 
         userRepository = database.getRepository(User.class);
@@ -256,5 +257,14 @@ public class UserService {
         return md;
     }
 
+    public static void closeDatabase(){
+        userRepository.close();
+    }
+
+    public static void resetDatabase() {
+        for (User user : userRepository.find()) {
+            userRepository.remove(user);
+        }
+    }
 
 }
