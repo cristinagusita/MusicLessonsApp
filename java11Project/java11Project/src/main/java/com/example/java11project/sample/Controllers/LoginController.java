@@ -10,6 +10,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
@@ -26,9 +27,11 @@ import com.example.java11project.sample.users.User;
 public class LoginController {
 
     @FXML
+    private Text entryMessage;
+    @FXML
     private Button cancelButton;
     @FXML
-    private Label loginMessageLabel;
+    public Label loginMessageLabel;
     @FXML
     private TextField usernameTextField;
     @FXML
@@ -49,7 +52,6 @@ public class LoginController {
     public void loginButtonOnAction(ActionEvent event) throws IOException{
         String username=usernameTextField.getText();
         String password=passwordField.getText();
-
 
         loginMessageLabel.setVisible(true);
         if(username!=null && password!=null){
@@ -103,5 +105,4 @@ public class LoginController {
         AnchorPane regpane= FXMLLoader.load(getClass().getClassLoader().getResource("register.fxml"));
         openregisterpane.getChildren().setAll(regpane);
     }
-
 }

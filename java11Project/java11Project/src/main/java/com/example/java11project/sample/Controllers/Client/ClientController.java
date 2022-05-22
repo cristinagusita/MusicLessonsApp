@@ -22,6 +22,8 @@ import com.example.java11project.sample.users.User;
 
 public class ClientController {
     @FXML
+    public Text ThanksMessage;
+    @FXML
     private AnchorPane change;
     @FXML
     private AnchorPane openClientInterface;

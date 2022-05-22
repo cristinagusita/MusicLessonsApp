@@ -48,7 +48,7 @@
         </AnchorPane>
         <AnchorPane fx:id="change" layoutX="452.0" prefHeight="680.0" prefWidth="675.0" style="-fx-background-color: #f4e7d5;">
             <children>
-                <Text layoutX="46.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dear user, we thank you for using our Music Lessons App!" textAlignment="CENTER" wrappingWidth="583.22607421875">
+                <Text fx:id="ThanksMessage" layoutX="46.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dear user, we thank you for using our Music Lessons App!" textAlignment="CENTER" wrappingWidth="583.22607421875">
                     <font>
                         <Font name="System Bold Italic" size="21.0" />
                     </font>
