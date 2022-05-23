@@ -32,7 +32,7 @@ import static org.testfx.assertions.api.Assertions.assertThat;
 class ClientBookLessonControllerTest {
     @BeforeAll
     public static void beforeAll() throws IOException {
-        FileSistemService.APPLICATION_FOLDER = ".MusicLessonsAppDatabase-test";
+        FileSistemService.APPLICATION_FOLDER = ".MusicLessonsAppDatabase-test-11";
         FileSistemService.initDirectory();
         FileUtils.cleanDirectory(FileSistemService.getApplicationHomeFolder().toFile());
         UserService.initDatabase();

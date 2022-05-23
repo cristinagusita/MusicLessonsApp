@@ -19,7 +19,8 @@ import java.io.IOException;
 
 public class ProfesorReviewsController {
 
-
+    @FXML
+    private Button check_r;
     @FXML
     private TextField nume;
     @FXML

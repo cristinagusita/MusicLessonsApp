@@ -13,7 +13,7 @@
                 <Image url="@com/example/java11project/rv.jpg" />
             </image>
         </ImageView>
-        <Button layoutX="299.0" layoutY="150.0" mnemonicParsing="false" onAction="#CheckButtonOnAction" style="-fx-background-color: #b1380f;" text="Check" textFill="#f5f5f5">
+        <Button fx:id="check_r" layoutX="299.0" layoutY="150.0" mnemonicParsing="false" onAction="#CheckButtonOnAction" style="-fx-background-color: #b1380f;" text="Check" textFill="#f5f5f5">
             <font>
                 <Font name="System Bold" size="16.0" />
             </font>

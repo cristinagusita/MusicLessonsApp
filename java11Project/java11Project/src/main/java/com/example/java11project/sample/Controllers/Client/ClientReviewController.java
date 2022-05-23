@@ -18,6 +18,10 @@ import java.io.IOException;
 public class ClientReviewController {
 
     @FXML
+    private Button review;
+    @FXML
+    private Button search;
+    @FXML
     private Text choose;
     @FXML
     private ComboBox cb1;
