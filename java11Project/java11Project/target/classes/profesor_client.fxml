@@ -13,7 +13,7 @@
             </image>
         </ImageView>
         <ComboBox fx:id="cb" layoutX="222.0" layoutY="317.0" prefHeight="38.0" prefWidth="218.0" style="-fx-background-color: #e7c1ab;" />
-        <Button layoutX="298.0" layoutY="199.0" mnemonicParsing="false" onAction="#cbOnAction" prefHeight="46.0" prefWidth="65.0" style="-fx-background-color: #e7c1ab;" text="OK" textFill="#141414">
+        <Button fx:id="OK" layoutX="298.0" layoutY="199.0" mnemonicParsing="false" onAction="#cbOnAction" prefHeight="46.0" prefWidth="65.0" style="-fx-background-color: #e7c1ab;" text="OK" textFill="#141414">
             <font>
                 <Font name="System Bold" size="17.0" />
             </font>
@@ -28,7 +28,7 @@
                 <Font name="System Bold" size="18.0" />
             </font>
         </Text>
-        <Button layoutX="468.0" layoutY="317.0" mnemonicParsing="false" onAction="#seeOnAction" prefHeight="38.0" prefWidth="113.0" style="-fx-background-color: #e7c1ab;" text="SEE INFO" textFill="#141414">
+        <Button fx:id="SeeInfo" layoutX="468.0" layoutY="317.0" mnemonicParsing="false" onAction="#seeOnAction" prefHeight="38.0" prefWidth="113.0" style="-fx-background-color: #e7c1ab;" text="SEE INFO" textFill="#141414">
             <font>
                 <Font name="System Bold" size="17.0" />
             </font>

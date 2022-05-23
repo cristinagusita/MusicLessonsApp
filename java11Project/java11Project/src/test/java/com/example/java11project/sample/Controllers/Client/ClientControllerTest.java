@@ -37,6 +37,7 @@ class ClientControllerTest {
     }
 
     @Test
+    @DisplayName("Check \" See teachers\" button")
     void testSeeProfesors(FxRobot robot) throws InterruptedException {
 
         robot.clickOn("#SeeTeachers");
@@ -50,6 +51,7 @@ class ClientControllerTest {
         assertEquals("Dear user, we thank you for using our Music Lessons App!", text.getText());
     }
     @Test
+    @DisplayName("Check \" See prices\" button")
     void testSeePrices(FxRobot robot)
     {
         robot.clickOn("#SeePrices");
@@ -62,6 +64,7 @@ class ClientControllerTest {
         assertEquals("Dear user, we thank you for using our Music Lessons App!", text.getText());
     }
     @Test
+    @DisplayName("Check \"Review profesor\" button")
     void testReviewTeacher(FxRobot robot)
     {
         robot.clickOn("#ReviewProfesor");
@@ -74,6 +77,7 @@ class ClientControllerTest {
         assertEquals("Dear user, we thank you for using our Music Lessons App!", text.getText());
     }
     @Test
+    @DisplayName("Check \" Book a lesson\" button")
     void testBookLessons(FxRobot robot)
     {
         robot.clickOn("#BookLesson");
@@ -86,6 +90,7 @@ class ClientControllerTest {
         assertEquals("Dear user, we thank you for using our Music Lessons App!", text1.getText());
     }
     @Test
+    @DisplayName("Check \" Log out\" button")
     void testLogOut(FxRobot robot)
     {
         robot.clickOn("#logOut");

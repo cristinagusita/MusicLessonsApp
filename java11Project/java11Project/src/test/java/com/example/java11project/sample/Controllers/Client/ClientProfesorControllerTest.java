@@ -3,10 +3,15 @@ package com.example.java11project.sample.Controllers.Client;
 import com.example.java11project.sample.exceptions.UsernameAlreadyExistsException;
 import com.example.java11project.sample.services.FileSistemService;
 import com.example.java11project.sample.services.UserService;
+import com.example.java11project.sample.users.User;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextArea;
+import javafx.scene.text.Text;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.*;
@@ -16,6 +21,7 @@ import org.testfx.framework.junit5.Start;
 import static org.testfx.assertions.api.Assertions.assertThat;
 import org.testfx.framework.junit5.ApplicationExtension;
 import java.io.IOException;
+import java.util.List;
 
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -25,7 +31,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(ApplicationExtension.class)
 
-class ClientPricesControllerTest {
+class ClientProfesorControllerTest {
 
     @BeforeAll
     public static void beforeAll() throws IOException {
@@ -47,48 +53,51 @@ class ClientPricesControllerTest {
 
     @Start
     void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("prices_client.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("profesor_client.fxml"));
         primaryStage.setTitle("");
-        primaryStage.setScene(new Scene(root, 500, 500));
+        primaryStage.setScene(new Scene(root, 680, 675));
         primaryStage.show();
     }
 
     @Test
-    @DisplayName("Check the prices for different kinds of price values")
-    void testSeePrices(FxRobot robot)
+    @DisplayName("Check the dispayed areas")
+    void SeeTeacherInfosTest(FxRobot robot)
     {
         try{
             UserService.addUser("test1", "test1", "Profesor");
             UserService.addUser("test2", "test2", "Profesor");
-            UserService.addUser("test3", "test3", "Profesor");
-            UserService.addUser("test4", "test4", "Profesor");
 
         }catch(UsernameAlreadyExistsException e)
         {
             fail();
         }
 
-        UserService.modifyUserInfo("test1", "test1", "100", "My Description", "My instrument");
-        UserService.modifyUserInfo("test2", "test2", "-100", "My Description", "My instrument");
-        UserService.modifyUserInfo("test3", "test3", "0", "My Description", "My instrument");
-        UserService.modifyUserInfo("test4", "test4", "0a", "My Description", "My instrument");
-        assertThat(UserService.getAllUsers()).size().isEqualTo(4);
+        assertEquals(1, UserService.modifyUserInfo("test1", "test1", "100", "My Description", "My Instrument"));
+        assertEquals(0, UserService.modifyUserInfo("test2", "test2", "-100", "My Description1", "My Instrument1"));
 
-        robot.clickOn("#check");
+        assertThat(UserService.getAllUsers()).size().isEqualTo(2);
 
-        ListView <String> l1=robot.lookup("#list1").query();
-        ListView <String> l2=robot.lookup("#list2").query();
+        robot.clickOn("#OK");
+        robot.clickOn("#cb");
+        robot.clickOn("test1");
+        robot.clickOn("#SeeInfo");
 
-        assertEquals("test1" ,l1.getItems().get(0));
-        assertEquals("100 ron" ,l2.getItems().get(0));
+        TextArea t1=robot.lookup("#textd").query();
+        assertEquals("My Description", t1.getText());
 
-        assertEquals("test2" ,l1.getItems().get(1));
-        assertEquals(" ron" ,l2.getItems().get(1));
+        TextArea t2=robot.lookup("#textm").query();
+        assertEquals("My Instrument", t2.getText());
 
-        assertEquals("test3" ,l1.getItems().get(2));
-        assertEquals(" ron" ,l2.getItems().get(2));
+        TextArea t3=robot.lookup("#textp").query();
+        assertEquals("100 ron", t3.getText());
 
-        assertEquals("test4" ,l1.getItems().get(3));
-        assertEquals(" ron" ,l2.getItems().get(3));
+        robot.clickOn("#cb");
+        robot.clickOn("test2");
+        robot.clickOn("#SeeInfo");
+
+        assertEquals("", t1.getText());
+        assertEquals("", t2.getText());
+        assertEquals(" ron", t3.getText());
     }
+
 }

@@ -17,6 +17,10 @@ import java.io.IOException;
 
 public class ClientProfesorController {
     @FXML
+    private Button SeeInfo;
+    @FXML
+    private Button OK;
+    @FXML
     private Text OK_Text;
     @FXML
     ListView<String> list=new ListView<String>();

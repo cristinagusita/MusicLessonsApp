@@ -94,6 +94,7 @@ class LoginControllerTest {
     }
 
     @Test
+    @DisplayName("Check the log in for all the users categories")
     void testLoginProfesor(FxRobot robot) throws InterruptedException
     {
         assertThat(robot.lookup("#entryMessage").queryText()).hasText("You don't have an account? Register now!");
