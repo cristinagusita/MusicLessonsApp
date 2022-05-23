@@ -62,13 +62,16 @@ class ProfesorInfoControllerTest {
         robot.clickOn("#username");
         robot.write("Dumbledore");
         robot.clickOn("#password");
-        robot.write("hogwarts");
+        robot.write("hogwart");
         robot.clickOn("#pricetext");
         robot.write("123");
         robot.clickOn("#instrumenttext");
         robot.write("pian");
         robot.clickOn("#descriptiontext");
         robot.write("te invat in 1 zi sa canti la pian!");
+        robot.clickOn("SAVE");
+        robot.clickOn("#password");
+        robot.write("s");
         robot.clickOn("SAVE");
         TextField f =  (TextField) robot.lookup("#username").query();
         Stage stageExit = (Stage) f.getScene().getWindow();
