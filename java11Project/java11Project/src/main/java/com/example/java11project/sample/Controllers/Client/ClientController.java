@@ -22,7 +22,15 @@ import com.example.java11project.sample.users.User;
 
 public class ClientController {
     @FXML
-    public Text ThanksMessage;
+    private Button SeeTeachers;
+    @FXML
+    private Button BookLesson;
+    @FXML
+    private Button ReviewProfesor;
+    @FXML
+    private Text ThanksMessage;
+    @FXML
+    private Button SeePrices;
     @FXML
     private AnchorPane change;
     @FXML

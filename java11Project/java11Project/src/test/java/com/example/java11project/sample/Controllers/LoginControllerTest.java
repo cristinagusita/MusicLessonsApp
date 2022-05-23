@@ -15,35 +15,13 @@ import org.junit.jupiter.api.*;
 import org.testfx.api.FxRobot;
 import org.testfx.framework.junit5.Start;
 
-import static org.testfx.api.FxAssert.verifyThat;
 import static org.testfx.assertions.api.Assertions.assertThat;
 import org.testfx.framework.junit5.ApplicationExtension;
 import java.io.IOException;
 
-import com.example.java11project.sample.services.FileSistemService;
-import com.example.java11project.sample.services.UserService;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.input.KeyCode;
-import javafx.stage.Stage;
-import org.apache.commons.io.FileUtils;
-import org.junit.jupiter.api.*;
-
-//import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.testfx.assertions.api.Assertions.assertThat;
-
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.testfx.api.FxAssert;
-import org.testfx.api.FxRobot;
-import org.testfx.api.FxToolkit;
-import org.testfx.framework.junit5.ApplicationExtension;
-import org.testfx.framework.junit5.Start;
-import org.testfx.osgi.service.TestFx;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.testfx.matcher.control.TextMatchers.hasText;
 
 
 
@@ -73,7 +51,7 @@ class LoginControllerTest {
     void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
         primaryStage.setTitle("LOGIN TEST");
-        primaryStage.setScene(new Scene(root, 500, 500));
+        primaryStage.setScene(new Scene(root, 600, 450));
         primaryStage.show();
     }
 
