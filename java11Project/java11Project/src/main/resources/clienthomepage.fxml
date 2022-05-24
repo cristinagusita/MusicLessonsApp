@@ -14,17 +14,17 @@
                         <Image url="@com/example/java11project/rv.jpg" />
                     </image>
                 </ImageView>
-                <Button layoutX="73.0" layoutY="133.0" mnemonicParsing="false" onAction="#seePricesButtonOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="See Prices" textFill="#fffdfd">
+                <Button fx:id="SeePrices" layoutX="73.0" layoutY="133.0" mnemonicParsing="false" onAction="#seePricesButtonOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="See Prices" textFill="#fffdfd">
                     <font>
                         <Font name="System Bold" size="16.0" />
                     </font>
                 </Button>
-                <Button layoutX="73.0" layoutY="216.0" mnemonicParsing="false" onAction="#reviewButtonOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="Review a profesor" textFill="WHITE">
+                <Button fx:id="ReviewProfesor" layoutX="73.0" layoutY="216.0" mnemonicParsing="false" onAction="#reviewButtonOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="Review a profesor" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="16.0" />
                     </font>
                 </Button>
-                <Button layoutX="73.0" layoutY="300.0" mnemonicParsing="false" onAction="#bookButtonOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="Book Music Lesson" textFill="WHITE">
+                <Button fx:id="BookLesson" layoutX="73.0" layoutY="300.0" mnemonicParsing="false" onAction="#bookButtonOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="Book Music Lesson" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="16.0" />
                     </font>
@@ -39,7 +39,7 @@
                         <Font name="System Bold" size="16.0" />
                     </font>
                 </Button>
-                <Button layoutX="73.0" layoutY="61.0" mnemonicParsing="false" onAction="#seeprofesorsButtonOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="See teachers" textFill="#fffdfd">
+                <Button fx:id="SeeTeachers" layoutX="73.0" layoutY="61.0" mnemonicParsing="false" onAction="#seeprofesorsButtonOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #9a826a;" text="See teachers" textFill="#fffdfd">
                     <font>
                         <Font name="System Bold" size="16.0" />
                     </font>
@@ -48,7 +48,7 @@
         </AnchorPane>
         <AnchorPane fx:id="change" layoutX="452.0" prefHeight="680.0" prefWidth="675.0" style="-fx-background-color: #f4e7d5;">
             <children>
-                <Text layoutX="46.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dear user, we thank you for using our Music Lessons App!" textAlignment="CENTER" wrappingWidth="583.22607421875">
+                <Text fx:id="ThanksMessage" layoutX="46.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dear user, we thank you for using our Music Lessons App!" textAlignment="CENTER" wrappingWidth="583.22607421875">
                     <font>
                         <Font name="System Bold Italic" size="21.0" />
                     </font>

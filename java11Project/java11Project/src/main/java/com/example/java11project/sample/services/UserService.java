@@ -205,8 +205,17 @@ public class UserService {
             if (Objects.equals(name, user.getUsername())) {
                 String pass = encodePassword(name, password);
                 if (Objects.equals(pass, user.getPassword())) {
+                    try
+                    {
+                        if(Integer.parseInt(p)<=0)
+                            return 0;
+                    }catch(NumberFormatException e)
+                    {
+                        return 0;
+                    }
                     user.setUsername(name);
                     user.setPassword(pass);
+
                     user.setPrice(p);
                     user.setInstrument(i);
                     user.setDescription(d);

@@ -12,6 +12,8 @@ import java.io.IOException;
 
 public class ClientPricesController {
     @FXML
+    private Button check;
+    @FXML
     ListView<String> list1=new ListView<String>();
     @FXML
     ListView<String> list2=new ListView<String>();

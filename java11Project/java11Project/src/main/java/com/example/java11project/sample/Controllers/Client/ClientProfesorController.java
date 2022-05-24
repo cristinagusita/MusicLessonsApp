@@ -7,16 +7,21 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import javafx.scene.Parent;
-import org.w3c.dom.Text;
 import com.example.java11project.sample.services.UserService;
 import java.io.IOException;
 
 
 public class ClientProfesorController {
-
+    @FXML
+    private Button SeeInfo;
+    @FXML
+    private Button OK;
+    @FXML
+    private Text OK_Text;
     @FXML
     ListView<String> list=new ListView<String>();
 

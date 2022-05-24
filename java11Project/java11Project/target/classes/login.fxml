@@ -43,7 +43,7 @@
                                 <Font name="System Bold Italic" size="15.0" />
                             </font>
                         </Label>
-                        <Text fill="#dd1616" layoutX="15.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You don't have an account? Register now!">
+                        <Text fx:id="entryMessage" fill="#dd1616" layoutX="15.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You don't have an account? Register now!">
                             <font>
                                 <Font name="System Bold Italic" size="15.0" />
                             </font>
