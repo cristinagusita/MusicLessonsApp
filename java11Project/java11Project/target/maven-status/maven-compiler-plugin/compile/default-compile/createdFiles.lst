@@ -7,7 +7,7 @@ com\example\java11project\sample\exceptions\UsernameAlreadyExistsException.class
 module-info.class
 com\example\java11project\sample\Controllers\Profesor\ProfesorController.class
 com\example\java11project\sample\Controllers\Profesor\ProfesorReviewsController.class
-com\example\java11project\sample\Controllers\ClientBookLessonController.class
+com\example\java11project\sample\Controllers\Client\ClientBookLessonController.class
 com\example\java11project\sample\Controllers\LoginController.class
 com\example\java11project\sample\Controllers\Profesor\ProfesorInfoController.class
 com\example\java11project\sample\Controllers\Client\ClientProfesorController.class
