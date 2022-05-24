@@ -16,7 +16,8 @@ module com.example.java11project {
     opens com.example.java11project.sample.Controllers to javafx.fxml;
     opens com.example.java11project.sample.exceptions to javafx.fxml;
     opens com.example.java11project.sample.services to javafx.fxml;
-    opens com.example.java11project.sample.users to javafx.fxml, nitrite;
+    //opens com.example.java11project.sample.users to javafx.fxml, nitrite;
+    opens com.example.java11project.sample.users;
 
     exports com.example.java11project to javafx.graphics;
     exports com.example.java11project.sample.Controllers to javafx.fxml;

@@ -31,7 +31,7 @@ class LoginControllerTest {
 
     @BeforeAll
     public static void beforeAll() throws IOException {
-        FileSistemService.APPLICATION_FOLDER = ".MusicLessonsAppDatabase-test";
+        FileSistemService.APPLICATION_FOLDER = ".MusicLessonsAppDatabase-test-6";
         FileSistemService.initDirectory();
         FileUtils.cleanDirectory(FileSistemService.getApplicationHomeFolder().toFile());
         UserService.initDatabase();

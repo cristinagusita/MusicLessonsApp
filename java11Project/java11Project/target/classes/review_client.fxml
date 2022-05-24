@@ -13,7 +13,7 @@
             </image>
         </ImageView>
         <ComboBox fx:id="cb1" layoutX="223.0" layoutY="200.0" prefHeight="38.0" prefWidth="218.0" style="-fx-background-color: #e7c1ab;" />
-        <Button layoutX="222.0" layoutY="99.0" mnemonicParsing="false" onAction="#buttonOneOnAction" style="-fx-background-color: #e7c1ab;" text="Press to search profesors">
+        <Button fx:id="search" layoutX="222.0" layoutY="99.0" mnemonicParsing="false" onAction="#buttonOneOnAction" style="-fx-background-color: #e7c1ab;" text="Press to search profesors">
             <font>
                 <Font name="System Bold" size="16.0" />
             </font>
@@ -23,7 +23,7 @@
                 <Font name="System Bold" size="17.0" />
             </font>
         </Text>
-        <Button layoutX="253.0" layoutY="424.0" mnemonicParsing="false" onAction="#buttonTwoOnAction" style="-fx-background-color: #e7c1ab;" text="REVIEW HIM/HER">
+        <Button fx:id="review" layoutX="253.0" layoutY="424.0" mnemonicParsing="false" onAction="#buttonTwoOnAction" style="-fx-background-color: #e7c1ab;" text="REVIEW HIM/HER">
             <font>
                 <Font name="System Bold" size="16.0" />
             </font>
